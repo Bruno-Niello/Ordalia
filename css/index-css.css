@@ -277,6 +277,8 @@ h3 { /* cambiar por clases */
     height: 37.5rem;
     border:solid; 
     margin: 0.625rem 0.625rem;
+    background-image: url(../images/father.jpg);
+    background-size: contain;
 }
 
 .home2 {
