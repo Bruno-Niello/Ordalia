@@ -178,10 +178,6 @@ ul {
 
 }
 
-.menu1 ul li a:hover {
-    border-bottom: 2px solid black;
-}
-
 .menu_pestanas {
     padding-left: 3px;
     padding-right: 3px;
@@ -252,10 +248,6 @@ h3 { /* cambiar por clases */
     background-color: rgba(128, 128, 128, 0.123);
     padding: 0.625em 0.625em;
     margin: 0.625em 0.625em;
-}
-
-.seccionSecundaria_secciones ul li a.hover {
-    border-bottom: 2px solid rgb(0, 0, 0);
 }
 
 .seccionSecundaria_tabla {
@@ -400,28 +392,51 @@ h3 { /* cambiar por clases */
     border-radius: 3.125em;
 }
 
+/* ANIMACIONES */ 
 
-/* 
-    * cambios en index-css.css * 
+/* animacion secciones en index.html efecto de boton*/ 
+.seccion:hover { 
+    background-color: #f7f4f2;
+}
 
-    -se borro absolutamente todo y se empezo de 0.
-    -se implemento un grid de 7 filas y 4 columnas con 6 areas diferentes. 
-    -se implemento boxmodeling en todos los elementos.
-    -se implemento flexbox en gran parte de los elementos.
-    -se implemento una estetica inicial basica. 
-    -se implemento full responsive y mobile first.
-    -cambie las unidades px por em y rem para poder trabajar mejor en mobile first. 
+.seccion:active { 
+    background-color: #f7f4f2;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
 
-    En mobile first nacieron multiples problemas, es el principal foco de atencio para los proximos dias, en especial con el texto de <home2>, hay que cambiar el modelo de flex por uno de grid para poder aprovechar mejor el espacio. 
+#perfil { 
+    max-width: 100%;
+    height: auto;
+}
 
-    a tener en cuenta para la proxima version:
+/* animacion foto de perfil en contacto.html */ 
+#perfil:hover { 
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
 
-        IMPORTANTE!!! -cambiar las propiedades flex de <home>, <home1> y <home2> por un grid. 
-        -la estetica de la pagina esta en trabajo todavia y puede verse sujeta a cambios radicales. 
-        -resolver la estetica de los botones en general
-        -resolver el menu
-        -estilizar el formulario
-    
+  /* animaciones menu navegacion */ 
 
-
-*/ 
+.pestana:hover { 
+    background-color: rgba(102, 102, 102, 0.185);
+  }
+  
+.menu1 ul li a:hover {
+    border-bottom: 2px solid black;
+}
+ 
