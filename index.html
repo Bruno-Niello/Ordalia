@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ordalía</title>
+    <link rel="stylesheet" href="css/index-css.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dongle:wght@300&family=Roboto:wght@100&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <div class="main">
+        <header class="encabezado">
+           <!-- el logo es una imagen jpg, en la proxima version de la pagina la voy a eliminar y crear un header con texto + imagen + flexbox-->
+        </header>
+        <nav class="menu1"> <!-- menu de navegacion-->
+                <img src="https://img.icons8.com/external-outline-juicy-fish/60/000000/external-film-film-making-outline-outline-juicy-fish-15.png" id="menu_icono"/> <!-- icono del nav-->
+                <h4 id="menu_nombre">Ordalía</h4> 
+                <ul class="menu_pestanas">
+                    <li class="pestana"><a href="index.html">|Inicio|</a></li>
+                    <li class="pestana"><a href="pages/peliculas.html">|Películas|</a></li>
+                    <li class="pestana"><a href="pages/series.html">|Series|</a></li>
+                    <li class="pestana"><a href="pages/animaciones.html">|Animaciones|</a></li>
+                    <li class="pestana"><a href="pages/contacto.html">|Contacto|</a></li>
+                </ul>
+        </nav>
+        <div class="parrafo"> <!-- parrafo descriptivo del Index, ocupa la 3 fila del grid-->
+            <p class="parrafo_principal">Ordalía es un sitio web destinado al polémico, subjetivo, odiado u amado, pero sin dudas necesario arte de la crítica. Las mismas son realizadas por la entidad Bruno Niello, quien con cero conocimientos de cine y un método matemático para nada comprobable y totalmente azaroso (pues depende del sueño que me de la película) va a dedicarse a despotricar e insultar tus películas preferidas. En la pagina de contacto encontraran links a redes sociales para que se puedan desquitar por mensaje privado.</p>
+        </div>
+        <h2 id="reco_titulo">Recomendación de la semana </h2><!-- se agrego por fuera del <home> es una fila independiente del Grid (la 4) se espera poder implementarla dentro del <home> -->
+        <article class="home"> <!-- secciones principales (recomendacion de la semana, tabla de criticas y atajo de secciones)-->
+            <div class="home1"> <!-- recomendacion de la semana-->
+            <img src="../root/images/father.jpg" id="recomendacion">
+            </div>
+            <div class="home2">
+                <p class="main_texto">Lorem ipsum dolor sit amet, consecte adipiscing elit. Vestibulum vel nulla et enim dictum dignissim. Proin venenatis nunc et ante lacinia dapibus. Donec at ante lectus. Fusce ipsum diam, suscipit ullamcorper venenatis a, rhoncus vel neque. Maecenas facilisis erat ultricies magna lacinia, semper lacinia turpis euismod. Sed ac hendrerit arcu. Vestibulum porttitor vel lacus sed sagittis. Sed massa erat, pulvinar et lectus sed, egestas porta felis. Nunc feugiat tortor ut efficitur maximus. 
+                    
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vel nulla et enim dictum dignissim. Proin venenatis nunc et ante lacinia dapibus. Donec at ante lectus. Fusce ipsum diam, suscipit ullamcorper venenatis a, rhoncus vel neque. Maecenas facilisis erat ultricies magna lacinia, semper lacinia turpis euismod. Sed ac hendrerit arcu. Vestibulum porttitor vel lacus sed sagittis. Sed massa erat, pulvinar et lectus sed, egestas porta felis. Nunc feugiat tortor ut efficitur maximus. 
+                <br>
+                Puntacion: 9.85/10
+            </p>
+                <!--<p id="puntaje"> </p>-->
+            </div>
+        </article>
+        <aside class="seccionSecundaria"> <!-- . En la proxima version se espera eliminar la tabla y el atajo de secciones, no son necesarios y rompen con la estetica-->
+            <ul class="seccionSecundaria_secciones">
+                <h3>Secciones</h3>
+                <li class="seccion"><a href="pages/peliculas.html">Películas</a></li>
+                <li class="seccion"><a href="pages/series.html">Series</a></li>
+                <li class="seccion"><a href="pages/animaciones.html">Animaciones</a></li>
+            </ul>
+            <br> <br>
+            <table border="2" class="seccionSecundaria_tabla">
+                <caption> Últimas Críticas</caption>
+                    <thead>
+                        <td>Tipo</td>
+                        <td>Nombre</td>
+                        <td>*</td>
+                    </thead>
+                    <tr>
+                        <td>Película</td>
+                        <td>Se7en</td>
+                        <td>88</td>
+                    </tr>
+                    <tr>
+                        <td>Serie</td>
+                        <td>Lost</td>
+                        <td>44</td>
+                    </tr>
+                    <tr>
+                        <td>Anime</td>
+                        <td>Death Note</td>
+                        <td>50</td>
+                    </tr>
+            </table>
+        </aside>
+        <footer class="pie"> <!--pie de pagina-->
+            <h2 id="miNombre">© Bruno Niello 2022</h2>
+            <div class="redes"><h3 class="redes_nombre">Mis redes sociales</h3>
+                <a target="_blank" href="https://twitter.com/BrunoNiello">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z" />
+                    </svg>
+                </a>
+                <a target="_blank" href="https://www.instagram.com/bruno_niello/">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round" >
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <rect x="4" y="4" width="16" height="16" rx="4" />
+                        <circle cx="12" cy="12" r="3" />
+                        <line x1="16.5" y1="7.5" x2="16.5" y2="7.501" />
+                    </svg>
+                </a>
+                <a target="_blank" href="https://www.facebook.com/Lord.Niello/">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
+                    </svg>
+                </a>
+                <a target="_blank" href="https://www.reddit.com/user/kazaldum">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M12 8c2.648 0 5.028 .826 6.675 2.14a2.5 2.5 0 0 1 2.326 4.36c0 3.59 -4.03 6.5 -9 6.5c-4.875 0 -8.845 -2.8 -9 -6.294l-1 -.206a2.5 2.5 0 0 1 2.326 -4.36c1.646 -1.313 4.026 -2.14 6.674 -2.14z" />
+                        <path d="M12 8l1 -5l6 1" />
+                        <circle cx="19" cy="4" r="1" />
+                        <circle cx="9" cy="13" r=".5" fill="currentColor" />
+                        <circle cx="15" cy="13" r=".5" fill="currentColor" />
+                        <path d="M10 17c.667 .333 1.333 .5 2 .5s1.333 -.167 2 -.5" />
+                    </svg>
+                </a>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
+
+<!-- 
+
+    * cambios en el index.html *
+
+    -cambie los titulos de todos los html en el <head>
+    -borre todos los <br> y <hr>
+    -englobe todos los contenidos del <body> en un <div class="main">
+    -cambie la organizacion del index para adecuarlo a un sistema de grilla de 4 columnas y 7 filas. Siendo las areas: encabezado, menu de navegacion, parrafo descriptivo, titulo del home, seccion home, pie de pagina (6).
+
+
+    en las paginas de css y html restantes se vera reflejado sus respectivos cambios en un comentario como este
+
+-->

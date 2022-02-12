@@ -1,0 +1,425 @@
+
+/* GENERALES */ 
+
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+* {
+    font-family: 'Roboto', sans-serif;
+    /* font-size: 62.5%; 
+        me sigue rompiendo la pagina
+    */ 
+}
+
+body {
+    background-color: #f7f4f2;
+    background-image: url("data:image/svg+xml,%3Csvg width='40' height='1' viewBox='0 0 40 1' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 0h20v1H0z' fill='%23f4c5a6' fill-opacity='0.47' fill-rule='evenodd'/%3E%3C/svg%3E"); 
+    width: 90%;
+    margin: auto;
+    font-size: 16px; /* VALOR POR DEFECTO (1em) */ 
+}
+
+a { 
+    color: black;
+    text-decoration: none;
+}
+  
+ul { 
+    list-style: none;
+}
+
+
+/* GRID */ 
+
+.encabezado { 
+    grid-area: encabezado;
+}
+
+.menu1 {
+    grid-area: menu1;
+}
+
+.pie { 
+    grid-area: pie;
+}
+
+.seccionSecundaria {
+    grid-area: seccionSecundaria;
+}
+
+.home {
+    grid-area: home;
+}
+
+.parrafo {
+    grid-area: parrafo;
+}
+#reco_titulo {
+    grid-area: reco_titulo;
+}
+
+
+
+/* ESTILOS MOBILE */ 
+
+@media screen and (min-width: 320px) {
+    .main {
+        font-size: 14px;
+    }
+    .main {
+        display: grid; 
+        grid-auto-columns: 1fr; 
+        grid-template-columns:  1fr; 
+        grid-template-rows: 0.2fr 0.01fr 0.2fr 0.1fr 0.1fr 1fr 0.10fr; 
+        gap: 0px 0px; 
+        grid-template-areas: 
+          "encabezado"
+          "menu1"
+          "parrafo"
+          "reco_titulo"
+          "home"
+          "home"
+          "seccionSecundaria"
+          "pie"; 
+    }
+    .home,
+    .home1, 
+    .home2 { 
+        font-size: 8px;
+    }
+
+    .menu1 { font-size: 1em;}
+
+    /* 
+    #puntaje { 
+        grid-area: puntaje;
+    }
+
+    .main_texto { 
+        grid-area: maintexto;
+    }
+
+    .home2, 
+    .main_texto,
+    #puntaje { 
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+        "maintexto"
+        "puntaje";
+    }
+    */ 
+ 
+    .main_texto { 
+        overflow: auto;
+    }
+
+    .pie { 
+        font-size: 8px;
+    }
+
+}
+
+@media screen and (min-width: 1200px) {
+    .main {
+        display: grid; 
+        grid-auto-columns: 1fr; 
+        grid-template-columns: 1fr 1fr 1fr 1fr; 
+        grid-template-rows: 0.5fr 0.09fr 0.9fr 0.1fr 1fr 1fr 0.10fr; 
+        gap: 0px 0px; 
+        grid-template-areas: 
+          "encabezado encabezado encabezado encabezado"
+          "menu1 menu1 menu1 menu1"
+          "parrafo parrafo parrafo parrafo"
+          "reco_titulo reco_titulo reco_titulo reco_titulo"
+          "home home home seccionSecundaria"
+          "home home home seccionSecundaria"
+          "pie pie pie pie"; 
+    }
+    .home2 { 
+        font-size: 20px;
+    }
+
+    .pie { 
+        font-size: 1.25em;
+    }
+
+}
+
+/* LOGO */
+
+.encabezado {
+    width: 100%;
+    height: 12.5em;
+    margin-bottom: 0%;
+    background:url('../images/cabecera.jpg') center/cover;
+    display: flex;
+} 
+
+
+/* MENU <nav> */ 
+
+
+.menu1 {
+    position: sticky;
+    top: 0px;
+    display:flex;
+    justify-content: space-between;
+    flex-direction: row;
+    background-color: #f7f4f2;
+    margin: 0px 0px; 
+    width: 100%;
+    height: 1.875em;
+    border: outset black 1px;
+
+}
+
+.menu1 ul li a:hover {
+    border-bottom: 2px solid black;
+}
+
+.menu_pestanas {
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+#menu_icono {
+    max-width: fit-content;
+    max-height: fit-content;
+    padding: 2px 2px;
+}
+
+.pestana{
+    display: inline-block;
+    font-size: 1.25em;
+    padding: 0px 3px 3px 3px 
+}
+
+#menu_nombre { 
+    display: flex;
+    align-items: center;
+    font-size: 1.13em;
+} 
+
+/* INDEX */ 
+
+.parrafo p { /* aca utilice rem para que no use el valor 1.6em como font-size, quiero que tome el 16px nativo */ 
+    margin: 3.125rem  3.125rem; 
+    padding: 1.25rem 1.25rem;
+    font-size: 1.6em;
+}
+
+.parrafo_principal {
+    border: solid 1px black; 
+    border-radius: 3px;
+}
+
+.parrafo p,
+.home2,
+.home1,
+.seccionSecundaria,
+#reco_titulo,
+.pie,
+.formulario,
+#formu,
+.dato {
+    background-color: #f7f4f2;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23735d4e' fill-opacity='0.3' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
+}
+
+.seccionSecundaria {
+    display: flex;
+    flex-direction: column;
+    height: 38.75rem;
+    border: solid black 1px;
+}
+
+.seccionSecundaria_secciones {
+    margin-top: 6.25rem; /* utilice rem para que tome los 16px nativos y no el 1.25 */ 
+    font-size: 1.25em;    
+}
+
+h3 { /* cambiar por clases */
+    text-align: center;
+}
+
+.seccion {
+    border: solid 1px;
+    background-color: rgba(128, 128, 128, 0.123);
+    padding: 0.625em 0.625em;
+    margin: 0.625em 0.625em;
+}
+
+.seccionSecundaria_secciones ul li a.hover {
+    border-bottom: 2px solid rgb(0, 0, 0);
+}
+
+.seccionSecundaria_tabla {
+    font-size: 1.56em;
+    margin: 0.625rem 0.625rem;
+}
+
+.home,
+.home1,
+.home2 { 
+    display: flex;
+    flex-direction: row;
+    height: 38.75rem;
+    border: solid black 1px;
+}
+
+#recomendacion { 
+    width: 25rem;
+    height: 37.5rem;
+    border:solid; 
+    margin: 0.625rem 0.625rem;
+}
+
+.home2 {
+    padding: 1.25rem 1.25rem;
+}
+
+#reco_titulo { 
+    border: solid black 1px; 
+    text-align: center;
+}
+
+.pie {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    width: auto;
+    height: 6.25em;
+    margin: 0.625em 0px;
+    padding: 0.625em;
+    border: solid black 2px;
+}
+
+#miNombre { 
+    padding-right: 20em;
+}
+
+/* PELICULAS.HTML / SERIES.HTML / ANIMACIONES.HTML */
+
+.home_catalogo { 
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 3.125em 0.625em;
+    align-items: center;
+    margin-left: 1.875em;
+}
+ 
+.pelicula,
+.serie,
+.anime {
+    width: 13.75em;
+    height: 18.75em;
+    display: flex;
+    flex-direction: column-reverse;
+    border: solid black 1px; 
+    margin: 0.9375em;
+    align-items: center;
+}
+
+.pelicula {
+    background-image: url(../images/trainspotting.jpeg);
+}
+
+.serie { 
+    background-image: url(../images/true.jpeg);
+}
+
+.anime {
+    background-image: url(../images/death.jpeg);
+}
+
+.pelicula_puntaje,
+.serie_puntaje,
+.anime_puntaje {
+    background-color: white;
+    border-radius: 0.3125em;
+}
+
+.boton { 
+    color: black;
+    background-color: whitesmoke;
+}
+
+/* CONTACTO.HTML */ 
+
+#formu { 
+    width: 20em;
+    height: 20em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0.625em;
+    margin: 1.25em;
+}
+
+#name_formu { 
+    background-color: whitesmoke;
+    text-align: center;
+}
+
+#aviso { 
+    margin: 0.3125em;
+}
+
+.aviso_name { 
+    font-size: 0.88em;
+}
+
+#perfil { 
+    width: 25em;
+    height: 25em;
+    margin: 1.25em;
+    border: solid black 1px;
+}
+
+.home_contacto { 
+    display: flex;
+    flex-direction: row;
+    padding: 1.25em;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.dato { 
+    margin: 1.25em;
+    padding: 0.9375em;
+    border-radius: 3.125em;
+}
+
+
+/* 
+    * cambios en index-css.css * 
+
+    -se borro absolutamente todo y se empezo de 0.
+    -se implemento un grid de 7 filas y 4 columnas con 6 areas diferentes. 
+    -se implemento boxmodeling en todos los elementos.
+    -se implemento flexbox en gran parte de los elementos.
+    -se implemento una estetica inicial basica. 
+    -se implemento full responsive y mobile first.
+    -cambie las unidades px por em y rem para poder trabajar mejor en mobile first. 
+
+    En mobile first nacieron multiples problemas, es el principal foco de atencio para los proximos dias, en especial con el texto de <home2>, hay que cambiar el modelo de flex por uno de grid para poder aprovechar mejor el espacio. 
+
+    a tener en cuenta para la proxima version:
+
+        IMPORTANTE!!! -cambiar las propiedades flex de <home>, <home1> y <home2> por un grid. 
+        -la estetica de la pagina esta en trabajo todavia y puede verse sujeta a cambios radicales. 
+        -resolver la estetica de los botones en general
+        -resolver el menu
+        -estilizar el formulario
+    
+
+
+*/ 
