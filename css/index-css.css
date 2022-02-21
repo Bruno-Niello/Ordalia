@@ -92,27 +92,6 @@ ul {
     }
 
     .menu1 { font-size: 1em;}
-
-    /* 
-    #puntaje { 
-        grid-area: puntaje;
-    }
-
-    .main_texto { 
-        grid-area: maintexto;
-    }
-
-    .home2, 
-    .main_texto,
-    #puntaje { 
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr;
-        grid-template-areas: 
-        "maintexto"
-        "puntaje";
-    }
-    */ 
  
     .main_texto { 
         overflow: auto;
