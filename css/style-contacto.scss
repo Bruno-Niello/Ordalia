@@ -54,6 +54,7 @@ body {
             padding: 0.625em;
             margin: 1.25em;
             background-color: $color;
+            background-image: $fondopunto;
             #name_formu { 
                 background-color: whitesmoke;
                 text-align: center;}
@@ -67,6 +68,7 @@ body {
             padding: 0.9375em;
             border-radius: 3.125em;
             background-color: $color;
+            background-image: $fondopunto;
             &:hover{
                 background-color: rgba(122, 122, 122, 0.527);
                 border-bottom: 2px solid black;}
@@ -114,6 +116,7 @@ body {
         padding: 0.625em;
         border: solid black 2px;
         background-color: $color;
+        background-image: $fondopunto;
         #miNombre { 
         padding-right: 20em;}
     }

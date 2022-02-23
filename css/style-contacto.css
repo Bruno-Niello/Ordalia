@@ -165,6 +165,7 @@ body .home_contacto #formu {
   padding: 0.625em;
   margin: 1.25em;
   background-color: #f7f4f2;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23735d4e' fill-opacity='0.3' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
 }
 
 body .home_contacto #formu #name_formu {
@@ -186,6 +187,7 @@ body .home_contacto .dato {
   padding: 0.9375em;
   border-radius: 3.125em;
   background-color: #f7f4f2;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23735d4e' fill-opacity='0.3' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
 }
 
 body .home_contacto .dato:hover {
@@ -271,6 +273,7 @@ body .pie {
   padding: 0.625em;
   border: solid black 2px;
   background-color: #f7f4f2;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23735d4e' fill-opacity='0.3' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
 }
 
 body .pie #miNombre {
