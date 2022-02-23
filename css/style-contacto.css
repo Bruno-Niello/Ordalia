@@ -1,0 +1,371 @@
+@-webkit-keyframes shake {
+  0% {
+    -webkit-transform: translate(1px, 1px) rotate(0deg);
+            transform: translate(1px, 1px) rotate(0deg);
+  }
+  10% {
+    -webkit-transform: translate(-1px, -2px) rotate(-1deg);
+            transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  20% {
+    -webkit-transform: translate(-3px, 0px) rotate(1deg);
+            transform: translate(-3px, 0px) rotate(1deg);
+  }
+  30% {
+    -webkit-transform: translate(3px, 2px) rotate(0deg);
+            transform: translate(3px, 2px) rotate(0deg);
+  }
+  40% {
+    -webkit-transform: translate(1px, -1px) rotate(1deg);
+            transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    -webkit-transform: translate(-1px, 2px) rotate(-1deg);
+            transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  60% {
+    -webkit-transform: translate(-3px, 1px) rotate(0deg);
+            transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+    -webkit-transform: translate(3px, 1px) rotate(-1deg);
+            transform: translate(3px, 1px) rotate(-1deg);
+  }
+  80% {
+    -webkit-transform: translate(-1px, -1px) rotate(1deg);
+            transform: translate(-1px, -1px) rotate(1deg);
+  }
+  90% {
+    -webkit-transform: translate(1px, 2px) rotate(0deg);
+            transform: translate(1px, 2px) rotate(0deg);
+  }
+  100% {
+    -webkit-transform: translate(1px, -2px) rotate(-1deg);
+            transform: translate(1px, -2px) rotate(-1deg);
+  }
+}
+
+@keyframes shake {
+  0% {
+    -webkit-transform: translate(1px, 1px) rotate(0deg);
+            transform: translate(1px, 1px) rotate(0deg);
+  }
+  10% {
+    -webkit-transform: translate(-1px, -2px) rotate(-1deg);
+            transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  20% {
+    -webkit-transform: translate(-3px, 0px) rotate(1deg);
+            transform: translate(-3px, 0px) rotate(1deg);
+  }
+  30% {
+    -webkit-transform: translate(3px, 2px) rotate(0deg);
+            transform: translate(3px, 2px) rotate(0deg);
+  }
+  40% {
+    -webkit-transform: translate(1px, -1px) rotate(1deg);
+            transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    -webkit-transform: translate(-1px, 2px) rotate(-1deg);
+            transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  60% {
+    -webkit-transform: translate(-3px, 1px) rotate(0deg);
+            transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+    -webkit-transform: translate(3px, 1px) rotate(-1deg);
+            transform: translate(3px, 1px) rotate(-1deg);
+  }
+  80% {
+    -webkit-transform: translate(-1px, -1px) rotate(1deg);
+            transform: translate(-1px, -1px) rotate(1deg);
+  }
+  90% {
+    -webkit-transform: translate(1px, 2px) rotate(0deg);
+            transform: translate(1px, 2px) rotate(0deg);
+  }
+  100% {
+    -webkit-transform: translate(1px, -2px) rotate(-1deg);
+            transform: translate(1px, -2px) rotate(-1deg);
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font: normal 16px "Roboto", sans-serif;
+  background-color: #f7f4f2;
+  background-image: url("data:image/svg+xml,%3Csvg width='40' height='1' viewBox='0 0 40 1' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 0h20v1H0z' fill='%23f4c5a6' fill-opacity='0.47' fill-rule='evenodd'/%3E%3C/svg%3E");
+  width: 90%;
+  margin: auto;
+}
+
+body ul {
+  list-style: none;
+}
+
+body ul a {
+  color: black;
+  text-decoration: none;
+}
+
+body .home_contacto {
+  /* seccion principal */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 1.25em;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .home_contacto #perfil {
+  width: 25em;
+  height: 25em;
+  margin: 1.25em;
+  border: solid black 1px;
+}
+
+body .home_contacto #perfil:hover {
+  -webkit-animation: shake 0.5s;
+          animation: shake 0.5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+body .home_contacto #formu {
+  /* formulario */
+  width: 20em;
+  height: 20em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0.625em;
+  margin: 1.25em;
+  background-color: #f7f4f2;
+}
+
+body .home_contacto #formu #name_formu {
+  background-color: whitesmoke;
+  text-align: center;
+}
+
+body .home_contacto #formu .aviso_name {
+  font-size: 0.88em;
+}
+
+body .home_contacto #formu #aviso {
+  margin: 0.3125em;
+}
+
+body .home_contacto .dato {
+  /* iconos de gmail lkdn y github*/
+  margin: 1.25em;
+  padding: 0.9375em;
+  border-radius: 3.125em;
+  background-color: #f7f4f2;
+}
+
+body .home_contacto .dato:hover {
+  background-color: rgba(122, 122, 122, 0.527);
+  border-bottom: 2px solid black;
+}
+
+body .menu1 {
+  /* menu de navegacion */
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  background-color: #f7f4f2;
+  margin: 0px 0px;
+  width: 100%;
+  height: 1.875em;
+  border: outset black 1px;
+}
+
+body .menu1 #menu_icono {
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  max-height: -webkit-fit-content;
+  max-height: -moz-fit-content;
+  max-height: fit-content;
+  padding: 2px 2px;
+}
+
+body .menu1 #menu_nombre {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.13em;
+}
+
+body .menu1 .menu_pestanas {
+  padding-left: 3px;
+  padding-right: 3px;
+}
+
+body .menu1 .menu_pestanas .pestana {
+  display: inline-block;
+  font-size: 1.25em;
+  padding: 0px 3px 3px 3px;
+}
+
+body .menu1 ul li a:hover {
+  border-bottom: 2px solid black;
+}
+
+body .pie {
+  /* pie de pagina */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: auto;
+  height: 6.25em;
+  margin: 0.625em 0px;
+  padding: 0.625em;
+  border: solid black 2px;
+  background-color: #f7f4f2;
+}
+
+body .pie #miNombre {
+  padding-right: 20em;
+}
+
+body .encabezado {
+  /* logo del encabezado */
+  width: 100%;
+  height: 12.5em;
+  margin-bottom: 0%;
+  background: url("../images/cabecera.jpg") center/cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/* VOY A PEGAR EL GRID PERO LA IDEA ES HACERLO EN OTRO SCSS */
+.encabezado {
+  grid-area: encabezado;
+}
+
+.menu1 {
+  grid-area: menu1;
+}
+
+.pie {
+  grid-area: pie;
+}
+
+.seccionSecundaria {
+  grid-area: seccionSecundaria;
+}
+
+.home {
+  grid-area: home;
+}
+
+.parrafo {
+  grid-area: parrafo;
+}
+
+#reco_titulo {
+  grid-area: reco_titulo;
+}
+
+/* ESTILOS MOBILE */
+@media screen and (min-width: 320px) {
+  .main {
+    font-size: 14px;
+  }
+  .main {
+    display: -ms-grid;
+    display: grid;
+    grid-auto-columns: 1fr;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 0.2fr 0.01fr 0.2fr 0.1fr 0.1fr 1fr 0.10fr;
+        grid-template-rows: 0.2fr 0.01fr 0.2fr 0.1fr 0.1fr 1fr 0.10fr;
+    gap: 0px 0px;
+        grid-template-areas: "encabezado" "menu1" "parrafo" "reco_titulo" "home" "home" "seccionSecundaria" "pie";
+  }
+  .home,
+  .home1,
+  .home2 {
+    font-size: 8px;
+  }
+  .menu1 {
+    font-size: 1em;
+  }
+  .main_texto {
+    overflow: auto;
+  }
+  .pie {
+    font-size: 8px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .main {
+    display: -ms-grid;
+    display: grid;
+    grid-auto-columns: 1fr;
+    -ms-grid-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    -ms-grid-rows: 0.5fr 0.09fr 0.9fr 0.1fr 1fr 1fr 0.10fr;
+        grid-template-rows: 0.5fr 0.09fr 0.9fr 0.1fr 1fr 1fr 0.10fr;
+    gap: 0px 0px;
+        grid-template-areas: "encabezado encabezado encabezado encabezado" "menu1 menu1 menu1 menu1" "parrafo parrafo parrafo parrafo" "reco_titulo reco_titulo reco_titulo reco_titulo" "home home home seccionSecundaria" "home home home seccionSecundaria" "pie pie pie pie";
+  }
+  .home2 {
+    font-size: 20px;
+  }
+  .pie {
+    font-size: 1.25em;
+  }
+}
+/*# sourceMappingURL=style-contacto.css.map */
