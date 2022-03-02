@@ -22,7 +22,7 @@
 body { 
     font: $fuente;
     background-color: $color;
-    background-image: $fondo;
+    background-image: $lineas;
     width: 90%;
     margin:auto;
     ul { 
@@ -37,8 +37,8 @@ body {
         justify-content: center;
         align-items: center;
         #perfil { 
-            width: 25em;
-            height: 25em;
+            width: map-get($map: $tamano, $key: "width");
+            height: map-get($map: $tamano, $key: "height");
             margin: 1.25em;
             border: solid black 1px;
             &:hover { 
@@ -46,15 +46,14 @@ body {
                 animation-iteration-count: infinite;}
             }
         #formu { /* formulario */ 
-            width: 20em;
-            height: 20em;
+            width: map-get($map: $tamano, $key: "width");
+            height: map-get($map: $tamano, $key: "height");
             display: flex;
             flex-direction: column;
             justify-content: center;
             padding: 0.625em;
             margin: 1.25em;
-            background-color: $color;
-            background-image: $fondopunto;
+            @include fondo-color;
             #name_formu { 
                 background-color: whitesmoke;
                 text-align: center;}
@@ -62,16 +61,37 @@ body {
                 font-size: 0.88em;}
             #aviso { 
                 margin: 0.3125em;}
+            .botonformu { 
+                border: 1px solid black;
+                border-radius: 10px;
+                text-align: center;
+                background-color: $color;
+                margin: 5px;
+                padding: 5px;
+                &:hover{
+                    background-color: rgba(122, 122, 122, 0.527);
+                    border-bottom: 2px solid black;}
+                &:active { 
+                    background-color: grey;}
+                &--enviar{
+                    @extend .botonformu;
+                    background-color: rgba(0, 128, 0, 0.5);}
+                &--borrar{
+                    @extend .botonformu;
+                    background-color: rgba(255, 0, 0, 0.5);}}
         }
+    
         .dato {  /* iconos de gmail lkdn y github*/ 
             margin: 1.25em;
             padding: 0.9375em;
             border-radius: 3.125em;
-            background-color: $color;
-            background-image: $fondopunto;
+            @include fondo-color;
             &:hover{
                 background-color: rgba(122, 122, 122, 0.527);
                 border-bottom: 2px solid black;}
+            &:active { 
+                background-color: grey;
+                box-shadow: 0 5px grey;}
         }
     }
     .menu1 { /* menu de navegacion */ 
@@ -115,8 +135,7 @@ body {
         margin: 0.625em 0px;
         padding: 0.625em;
         border: solid black 2px;
-        background-color: $color;
-        background-image: $fondopunto;
+        @include fondo-color;
         #miNombre { 
         padding-right: 20em;}
     }
@@ -129,12 +148,6 @@ body {
         display: flex;
     } 
 }
-
-
-
-
-/* VOY A PEGAR EL GRID PERO LA IDEA ES HACERLO EN OTRO SCSS */ 
-
 
 .encabezado { 
     grid-area: encabezado;

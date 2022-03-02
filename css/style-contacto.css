@@ -1,3 +1,10 @@
+@charset "UTF-8";
+/*
+-Mapa usado para definir los tamaños de perfil y formulario
+-Mixin usado para la imagen de fondo de formulario, pie y datos
+-Extend usado para los botones del formulario (linea 76-81)
+
+*/
 @-webkit-keyframes shake {
   0% {
     -webkit-transform: translate(1px, 1px) rotate(0deg);
@@ -44,7 +51,6 @@
             transform: translate(1px, -2px) rotate(-1deg);
   }
 }
-
 @keyframes shake {
   0% {
     -webkit-transform: translate(1px, 1px) rotate(0deg);
@@ -101,7 +107,7 @@
 
 body {
   font: normal 16px "Roboto", sans-serif;
-  background-color: #f7f4f2;
+  background-color: white;
   background-image: url("data:image/svg+xml,%3Csvg width='40' height='1' viewBox='0 0 40 1' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 0h20v1H0z' fill='%23f4c5a6' fill-opacity='0.47' fill-rule='evenodd'/%3E%3C/svg%3E");
   width: 90%;
   margin: auto;
@@ -150,8 +156,8 @@ body .home_contacto #perfil:hover {
 
 body .home_contacto #formu {
   /* formulario */
-  width: 20em;
-  height: 20em;
+  width: 25em;
+  height: 25em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -181,6 +187,32 @@ body .home_contacto #formu #aviso {
   margin: 0.3125em;
 }
 
+body .home_contacto #formu .botonformu, body .home_contacto #formu .botonformu--enviar, body .home_contacto #formu .botonformu--borrar {
+  border: 1px solid black;
+  border-radius: 10px;
+  text-align: center;
+  background-color: white;
+  margin: 5px;
+  padding: 5px;
+}
+
+body .home_contacto #formu .botonformu:hover, body .home_contacto #formu .botonformu--enviar:hover, body .home_contacto #formu .botonformu--borrar:hover {
+  background-color: rgba(122, 122, 122, 0.527);
+  border-bottom: 2px solid black;
+}
+
+body .home_contacto #formu .botonformu:active, body .home_contacto #formu .botonformu--enviar:active, body .home_contacto #formu .botonformu--borrar:active {
+  background-color: grey;
+}
+
+body .home_contacto #formu .botonformu--enviar {
+  background-color: rgba(0, 128, 0, 0.5);
+}
+
+body .home_contacto #formu .botonformu--borrar {
+  background-color: rgba(255, 0, 0, 0.5);
+}
+
 body .home_contacto .dato {
   /* iconos de gmail lkdn y github*/
   margin: 1.25em;
@@ -193,6 +225,12 @@ body .home_contacto .dato {
 body .home_contacto .dato:hover {
   background-color: rgba(122, 122, 122, 0.527);
   border-bottom: 2px solid black;
+}
+
+body .home_contacto .dato:active {
+  background-color: grey;
+  -webkit-box-shadow: 0 5px grey;
+          box-shadow: 0 5px grey;
 }
 
 body .menu1 {
@@ -291,7 +329,6 @@ body .encabezado {
   display: flex;
 }
 
-/* VOY A PEGAR EL GRID PERO LA IDEA ES HACERLO EN OTRO SCSS */
 .encabezado {
   grid-area: encabezado;
 }
