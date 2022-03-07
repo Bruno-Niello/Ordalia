@@ -1,0 +1,115 @@
+@import "variables";
+
+.home_catalogo { /* ESTILO DEL CATALOGO Y CARDS */
+    margin: 50px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    .tarjetaContenedor{
+        margin: 10px;
+        perspective: 800;
+        &:hover .tarjeta{
+            transform: rotateY(180deg);}
+        .tarjeta{
+            @include cabeza;
+            transform-style: preserve-3d;
+            transition: .7s ease;
+            width: 300px;
+            height: 350px;
+            position: relative;
+            box-shadow: 0px 10px 15px -5px rgba(0,0,0,0.65);
+            .adelante{
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                backface-visibility: hidden;
+                background-size: cover;}
+            .atras{
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                transform: rotateY(180deg);
+                backface-visibility: hidden;
+                padding: 15px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                color: black;
+                font-weight: bold;
+                .puntajeCard{
+                    font-weight: bolder;
+                    font-size: 125%;
+                }
+                .botonCard{
+                    border: 2px solid black;
+                    background: transparent;
+                    width: 80px;
+                    height: 30px;
+                    border-radius: 3px;
+                    a {
+                        text-decoration: none;
+                        color: black;}
+                    &:hover { background-color: #ff260098;}
+                    &:active{ 
+                        background-color: rgb(231, 230, 230);
+                        box-shadow: 0 3px #666;}}}
+        }
+    }
+  }
+
+
+/* CONTENIDO DE LOS CATALOGOS: PELICULAS, SERIES Y ANIMACIONES */ 
+
+/* DESDE EL CSS SE AGREGA LA IMAGEN, EN EL HTML EL TEXTO Y TRAILER */ 
+
+.thefather {
+    background-image: url(../images/thefather.jpg);
+}
+.goodfellas {
+    background-image: url(../images/goodfellas.jpg);
+}
+.snatch {
+    background-image: url(../images/snatch.jpg);
+}
+.nocountry {
+    background-image: url(../images/nocountry.jpg);
+}
+.trainspotting {
+    background-image: url(../images/trainspotting.jpg);
+}
+.madmen { 
+    background-image: url(../images/madmen.jpg);
+}
+.soprano {
+    background-image: url(../images/soprano.jpg);
+}
+.succession { 
+    background-image: url(../images/succession.jpg);
+}
+.westworld { 
+    background-image: url(../images/westworld.jpg);
+}
+.hannibal {
+    background-image: url(../images/hannibal.jpg);
+}
+.bojack {
+    background-image: url(../images/bojack.jpg);
+}
+.desencanto {
+    background-image: url(../images/desencanto.jpg);
+}
+.deathnote {
+    background-image: url(../images/deathnote.jpg);
+}
+.ghost {
+    background-image: url(../images/ghost.jpg);
+}
+.evangelion {
+    background-image: url(../images/evangelion.jpg);
+}

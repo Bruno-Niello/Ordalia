@@ -7,7 +7,7 @@
     <!-- Titulo -->
     <title>Ordalía</title>
     <!-- CSS -->
-    <link rel="stylesheet" href="css/index-css.css">
+    <link rel="stylesheet" href="css/style.css">
     <!-- Fuentes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,11 +20,12 @@
 <body>
     <div class="main">
         <header class="encabezado">
-           <!-- el logo es una imagen jpg, en la proxima version de la pagina la voy a eliminar y crear un header con texto + imagen + flexbox-->
+           <p class="logoTitulo">Ordalía</p>
+           <p class="logoSubtitulo">"cogitationes poenam nemo patitur"</p>
         </header>
         <nav class="menu1"> <!-- menu de navegacion-->
                 <img src="https://img.icons8.com/external-outline-juicy-fish/60/000000/external-film-film-making-outline-outline-juicy-fish-15.png" id="menu_icono"/> <!-- icono del nav-->
-                <h4 id="menu_nombre">Ordalía</h4> 
+                <h4 id="menu_nombre"></h4> 
                 <ul class="menu_pestanas">
                     <li class="pestana"><a href="index.html">|Inicio|</a></li>
                     <li class="pestana"><a href="pages/peliculas.html">|Películas|</a></li>
@@ -39,21 +40,27 @@
         <h2 id="reco_titulo">Recomendación de la semana </h2><!-- se agrego por fuera del <home> es una fila independiente del Grid (la 4) se espera poder implementarla dentro del <home> -->
         <article class="home"> <!-- secciones principales (recomendacion de la semana, tabla de criticas y atajo de secciones)-->
             <div class="home1"> <!-- recomendacion de la semana-->
-            <img src="../root/images/father.jpg" id="recomendacion">
+            <div id="recomendacion"></div>
             </div>
             <div class="home2">
-                <p class="main_texto">Lorem ipsum dolor sit amet, consecte adipiscing elit. Vestibulum vel nulla et enim dictum dignissim. Proin venenatis nunc et ante lacinia dapibus. Donec at ante lectus. Fusce ipsum diam, suscipit ullamcorper venenatis a, rhoncus vel neque. Maecenas facilisis erat ultricies magna lacinia, semper lacinia turpis euismod. Sed ac hendrerit arcu. Vestibulum porttitor vel lacus sed sagittis. Sed massa erat, pulvinar et lectus sed, egestas porta felis. Nunc feugiat tortor ut efficitur maximus. 
-                    
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vel nulla et enim dictum dignissim. Proin venenatis nunc et ante lacinia dapibus. Donec at ante lectus. Fusce ipsum diam, suscipit ullamcorper venenatis a, rhoncus vel neque. Maecenas facilisis erat ultricies magna lacinia, semper lacinia turpis euismod. Sed ac hendrerit arcu. Vestibulum porttitor vel lacus sed sagittis. Sed massa erat, pulvinar et lectus sed, egestas porta felis. Nunc feugiat tortor ut efficitur maximus. 
+                <p class="main_texto">
+                    The Father es una película franco-británica de drama dirigida por Florian Zeller y protagonizada por Anthony Hopkins y Olivia Colman. Adaptada de la obra de teatro Le Père (El Padre), también de Zeller, se estrenó el 27 de enero de 2020. Obtuvo un gran recibimiento tras su estreno mundial en el Festival de Cine de Sundance 2020. El filme obtuvo 6 nominaciones a los premios Óscar, con Anthony Hopkins llevándose el galardón a mejor actor.<br>
+                    <br>
+                    Mi experiencia:
+                    <br>
+                    <br>
+                    Después de una hora y media larga, mi experiencia al salir de la sala fue la sensación de haber visto una muy buena película, pero también de estar removido por dentro, ya que los temas y situaciones que aborda el filme son reales… o más bien vitales. El padre es una película que transpira humanidad y que nos deja una sensación de tristeza en el alma, ya que no podemos escaparnos de historia sobre el olvido de Anthony, ni del deseo de Anne de hacer su vida, sabiéndose al mismo tiempo responsable de atender la enfermedad de su padre. El paso del tiempo, el deterioro de las facultades mentales, el cuidado de nuestros padres, el olvido… son temas que presentes en la pantalla, y como no, también en nuestra vida.
                 <br>
-                Puntacion: 9.85/10
-            </p>
+                <br>
+                <br>
+                <p id="puntaje">Puntacion: 9.85/10</p>
+                </p>
                 <!--<p id="puntaje"> </p>-->
             </div>
         </article>
         <aside class="seccionSecundaria"> <!-- . En la proxima version se espera eliminar la tabla y el atajo de secciones, no son necesarios y rompen con la estetica-->
             <ul class="seccionSecundaria_secciones">
-                <h3>Secciones</h3>
+                <h3 id="seccionNombre">Secciones</h3>
                 <li class="seccion"><a href="pages/peliculas.html">Películas</a></li>
                 <li class="seccion"><a href="pages/series.html">Series</a></li>
                 <li class="seccion"><a href="pages/animaciones.html">Animaciones</a></li>

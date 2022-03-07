@@ -1,0 +1,79 @@
+@import "variables";
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
+
+    .home_contacto { /* seccion principal */ 
+        display: flex;
+        flex-direction: row;
+        padding: 1.25em;
+        justify-content: center;
+        align-items: center;
+        #perfil { 
+            width: map-get($map: $tamano, $key: "width");
+            height: map-get($map: $tamano, $key: "height");
+            margin: 1.25em;
+            border: solid black 1px;
+            &:hover { 
+                animation: shake 0.5s;
+                animation-iteration-count: infinite;}
+            }
+        #formu { /* formulario */ 
+            width: map-get($map: $tamano, $key: "width");
+            height: map-get($map: $tamano, $key: "height");
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 0.625em;
+            margin: 1.25em;
+            @include fondo-color;
+            #name_formu { 
+                background-color: whitesmoke;
+                text-align: center;}
+            .aviso_name { 
+                font-size: 0.88em;}
+            #aviso { 
+                margin: 0.3125em;}
+            .botonformu { 
+                border: 1px solid black;
+                border-radius: 10px;
+                text-align: center;
+                background-color: $color;
+                margin: 5px;
+                padding: 5px;
+                &:hover{
+                    background-color: rgba(122, 122, 122, 0.527);
+                    border-bottom: 2px solid black;}
+                &:active { 
+                    background-color: grey;}
+                &--enviar{
+                    @extend .botonformu;
+                    background-color: rgba(0, 128, 0, 0.5);}
+                &--borrar{
+                    @extend .botonformu;
+                    background-color: rgba(255, 0, 0, 0.5);}}
+        }
+    
+        .dato {  /* iconos de gmail lkdn y github*/ 
+            margin: 1.25em;
+            padding: 0.9375em;
+            border-radius: 3.125em;
+            @include fondo-color;
+            &:hover{
+                background-color: rgba(122, 122, 122, 0.527);
+                border-bottom: 2px solid black;}
+            &:active { 
+                background-color: grey;
+                box-shadow: 0 5px grey;}
+        }
+    }

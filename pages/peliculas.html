@@ -7,7 +7,7 @@
     <!-- Titulo -->
     <title>Ordalía</title>
     <!-- CSS -->
-    <link rel="stylesheet" href="../css/index-css.css">
+    <link rel="stylesheet" href="../css/style.css">
     <!-- Fuentes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,8 +18,10 @@
     <meta name="keywords" content="Critica, Peliculas, Cine, Series, Anime, Animaciones, Recomendaciones">
 </head>
 <body>
-    <header class="encabezado"> <!-- encabezado (por ahora vacio)-->
-    </header>
+    <header class="encabezado">
+        <p class="logoTitulo">Ordalía</p>
+        <p class="logoSubtitulo">"cogitationes poenam nemo patitur"</p>
+     </header>
     <nav class="menu1"> <!-- menu de navegacion-->
         <img src="https://img.icons8.com/external-outline-juicy-fish/60/000000/external-film-film-making-outline-outline-juicy-fish-15.png" id="menu_icono"/>
         <h4 id="menu_nombre">Ordalía</h4>
@@ -32,70 +34,81 @@
         </ul>
     </nav>
     <section class="home_catalogo"> <!-- catalogo dividido en articulos -->
-        <article class="pelicula">
-            <h3 class="pelicula_puntaje">9/10</h3>
-            <button class="boton">Ver crítica</button>
-        </article>
-        <article class="pelicula">
-            <h3 class="pelicula_puntaje">9/10</h3>
-            <button class="boton">Ver crítica</button>
-        </article>
-        <article class="pelicula">
-            <h3 class="pelicula_puntaje">9/10</h3>
-            <button class="boton">Ver crítica</button>
-        </article>
-        <article class="pelicula">
-            <h3 class="pelicula_puntaje">9/10</h3>
-            <button class="boton">Ver crítica</button>
-        </article>
-        <article class="pelicula">
-            <h3 class="pelicula_puntaje">9/10</h3>
-            <button class="boton">Ver crítica</button>
-        </article>
-        <article class="pelicula">
-            <h3 class="pelicula_puntaje">9/10</h3>
-            <button class="boton">Ver crítica</button>
-        </article>
-        <article class="pelicula">
-            <h3 class="pelicula_puntaje">9/10</h3>
-            <button class="boton">Ver crítica</button>
-        </article>
-        <article class="pelicula">
-            <h3 class="pelicula_puntaje">9/10</h3>
-            <button class="boton">Ver crítica</button>
-        </article>
-        <article class="pelicula">
-            <h3 class="pelicula_puntaje">9/10</h3>
-            <button class="boton">Ver crítica</button>
-        </article>
-        <article class="pelicula">
-            <h3 class="pelicula_puntaje">9/10</h3>
-            <button class="boton">Ver crítica</button>
-        </article>
-        <article class="pelicula">
-            <h3 class="pelicula_puntaje">9/10</h3>
-            <button class="boton">Ver crítica</button>
-        </article>
-        <article class="pelicula">
-            <h3 class="pelicula_puntaje">9/10</h3>
-            <button class="boton">Ver crítica</button>
-        </article>
-        <article class="pelicula">
-            <h3 class="pelicula_puntaje">9/10</h3>
-            <button class="boton">Ver crítica</button>
-        </article>
-        <article class="pelicula">
-            <h3 class="pelicula_puntaje">9/10</h3>
-            <button class="boton">Ver crítica</button>
-        </article>
-        <article class="pelicula">
-            <h3 class="pelicula_puntaje">9/10</h3>
-            <button class="boton">Ver crítica</button>
-        </article>
-        <article class="pelicula">
-            <h3 class="pelicula_puntaje">9/10</h3>
-            <button class="boton">Ver crítica</button>
-        </article>
+        <div class="tarjetaContenedor">
+            <div class="tarjeta">
+              <div class="adelante thefather">
+              </div>
+              <div class="atras">
+                <p class="pelitxt">Un hombre rechaza la ayuda de su hija, a pesar de todo lo que ha envejecido. A medida que intenta dar sentido a sus circunstancias cambiantes, comienza a dudar de sus seres queridos, de su propia mente e incluso del tejido de su realidad.</p>
+                <br>
+                <button class="botonCard">
+                    <a href="https://www.youtube.com/watch?v=4TZb7YfK-JI" target="_blank">Ver Trailer</a>
+                </button>
+                <br>
+                <p class="puntaje">Puntación: 9.85/10</p>
+              </div>
+            </div>
+        </div>
+        <div class="tarjetaContenedor">
+            <div class="tarjeta">
+              <div class="adelante goodfellas">
+              </div>
+              <div class="atras">
+                <p class="pelitxt">Henry, un niño de trece años de Brooklyn, vive fascinado con el mundo de los gángsters. Su sueño se hace realidad cuando entra en la familia Pauline.</p>
+                <br>
+                <button class="botonCard">
+                    <a href="https://www.youtube.com/watch?v=2ilzidi_J8Q" target="_blank">Ver Trailer</a>
+                </button>
+                <br>
+                <p class="puntaje">Puntación: 8.65/10</p>
+              </div>
+            </div>
+        </div>
+        <div class="tarjetaContenedor">
+            <div class="tarjeta">
+              <div class="adelante snatch">
+              </div>
+              <div class="atras">
+                <p class="pelitxt">Promotores de boxeo sin escrúpulos, corredores de apuestas violentos, un gángster ruso, ladrones aficionados e incompetentes y supuestos joyeros judíos luchan por localizar a un diamante robado de valor incalculable.</p>
+                <br>
+                <button class="botonCard">
+                    <a href="https://www.youtube.com/watch?v=9Jar2XkBboo" target="_blank">Ver Trailer</a>
+                </button>
+                <br>
+                <p class="puntaje">Puntación: 7.73/10</p>
+              </div>
+            </div>
+        </div>
+        <div class="tarjetaContenedor">
+            <div class="tarjeta">
+              <div class="adelante nocountry">
+              </div>
+              <div class="atras">
+                <p class="pelitxt">Mientras esta de cacería, Llewelyn Moss (Josh Brolin) descubre las horribles consecuencias de una venta de drogas frustrada. A pesar de saber que no debería, Moss no puede resistirse a tomar el dinero y se apodera de él. El cazador empieza a ser perseguido por un asesino llamado Chigurh (Javier Bardem).</p>
+                <br>
+                <button class="botonCard">
+                    <a href="https://www.youtube.com/watch?v=qZL0Ru-55u8" target="_blank">Ver Trailer</a>
+                </button>
+                <br>
+                <p class="puntaje">Puntación: 9.90/10</p>
+              </div>
+            </div>
+        </div>
+        <div class="tarjetaContenedor">
+            <div class="tarjeta">
+              <div class="adelante trainspotting">
+              </div>
+              <div class="atras">
+                <p class="pelitxt">Mark Renton, un joven escocés, y sus amigos son adictos a la heroína. Todos tienen la intención de luchar contra los terribles efectos de las drogas, pero las tentaciones son muy grandes y la fuerza de voluntad escasa.</p>
+                <br>
+                <button class="botonCard">
+                    <a href="https://www.youtube.com/watch?v=8LuxOYIpu-I&t=23s" target="_blank">Ver Trailer</a>
+                </button>
+                <br>
+                <p class="puntaje">Puntación: 10/10</p>
+              </div>
+            </div>
+        </div>
     </section>
     <footer class="pie"> <!-- pie de pagina -->
         <hr>

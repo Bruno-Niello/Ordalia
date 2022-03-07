@@ -7,7 +7,7 @@
     <!-- Titulo -->
     <title>Ordalía</title>
     <!-- CSS -->
-    <link rel="stylesheet" href="../css/index-css.css">
+    <link rel="stylesheet" href="../css/style.css">
     <!-- Fuentes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,8 +18,10 @@
     <meta name="keywords" content="Critica, Peliculas, Cine, Series, Anime, Animaciones, Recomendaciones">
 </head>
 <body>
-    <header class="encabezado"> <!-- encabezado (por ahora vacio)-->
-    </header>
+    <header class="encabezado">
+        <p class="logoTitulo">Ordalía</p>
+        <p class="logoSubtitulo">"cogitationes poenam nemo patitur"</p>
+     </header>
     <nav class="menu1">  <!-- menu de navegacion -->
         <img src="https://img.icons8.com/external-outline-juicy-fish/60/000000/external-film-film-making-outline-outline-juicy-fish-15.png" id="menu_icono"/>
         <h4 id="menu_nombre">Ordalía</h4>
@@ -32,62 +34,81 @@
         </ul>
     </nav>
     <section class="home_catalogo"> <!-- catalogo dividido en articulos -->
-        <article class="anime">
-            <h3 class="anime_puntaje">7/10</h3>
-            <button class="boton">Ver crítica</button>
-        </article>
-        <article class="anime">
-            <h3 class="anime_puntaje">7/10</h3>
-            <button class="boton">Ver crítica</button>
-        </article>
-        <article class="anime">
-            <h3 class="anime_puntaje">7/10</h3>
-            <button class="boton">Ver crítica</button>
-        </article>
-        <article class="anime">
-            <h3 class="anime_puntaje">7/10</h3>
-            <button class="boton">Ver crítica</button>
-        </article>
-        <article class="anime">
-            <h3 class="anime_puntaje">7/10</h3>
-            <button class="boton">Ver crítica</button>
-        </article>
-        <article class="anime">
-            <h3 class="anime_puntaje">7/10</h3>
-            <button class="boton">Ver crítica</button>
-        </article>
-        <article class="anime">
-            <h3 class="anime_puntaje">7/10</h3>
-            <button class="boton">Ver crítica</button>
-        </article>
-        <article class="anime">
-            <h3 class="anime_puntaje">7/10</h3>
-            <button class="boton">Ver crítica</button>
-        </article>
-        <article class="anime">
-            <h3 class="anime_puntaje">7/10</h3>
-            <button class="boton">Ver crítica</button>
-        </article>
-        <article class="anime">
-            <h3 class="anime_puntaje">7/10</h3>
-            <button class="boton">Ver crítica</button>
-        </article>
-        <article class="anime">
-            <h3 class="anime_puntaje">7/10</h3>
-            <button class="boton">Ver crítica</button>
-        </article>
-        <article class="anime">
-            <h3 class="anime_puntaje">7/10</h3>
-            <button class="boton">Ver crítica</button>
-        </article>
-        <article class="anime">
-            <h3 class="anime_puntaje">7/10</h3>
-            <button class="boton">Ver crítica</button>
-        </article>
-        <article class="anime">
-            <h3 class="anime_puntaje">7/10</h3>
-            <button class="boton">Ver crítica</button>
-        </article>
+      <div class="tarjetaContenedor">
+          <div class="tarjeta">
+            <div class="adelante bojack">
+            </div>
+            <div class="atras">
+              <p class="pelitxt">BoJack Horseman es un olvidado actor que supo vivir sus días de gloria gracias a una comedia televisiva, y que se enfrenta a las más duras crisis existenciales y adicciones mientras intenta volver a las grandes ligas.</p>
+              <br>
+              <button class="botonCard">
+                  <a href="https://www.youtube.com/watch?v=i1eJMig5Ik4" target="_blank">Ver Trailer</a>
+              </button>
+              <br>
+              <p class="puntaje">Puntación: 10/10</p>
+            </div>
+          </div>
+      </div>
+      <div class="tarjetaContenedor">
+          <div class="tarjeta">
+            <div class="adelante desencanto">
+            </div>
+            <div class="atras">
+              <p class="pelitxt">Toda princesa tiene sus deberes, pero Bean lo que realmente quiere es embriagarse. Y con un elfo y un demonio como socios, volver loco al rey será una tarea fácil.</p>
+              <br>
+              <button class="botonCard">
+                  <a href="https://www.youtube.com/watch?v=aTtinse4RWQ" target="_blank">Ver Trailer</a>
+              </button>
+              <br>
+              <p class="puntaje">Puntación: 6.11/10</p>
+            </div>
+          </div>
+      </div>
+      <div class="tarjetaContenedor">
+          <div class="tarjeta">
+            <div class="adelante deathnote">
+            </div>
+            <div class="atras">
+              <p class="pelitxt">Death Note es una serie de manga escrita por Tsugumi Ōba e ilustrada por Takeshi Obata, y cuya adaptación a serie de anime fue dirigida por Tetsurō Araki. Cuenta, además, con varias películas y videojuegos. La historia se centra en Light Yagami, un estudiante de preparatoria.</p>
+              <br>
+              <button class="botonCard">
+                  <a href="https://www.youtube.com/watch?v=NlJZ-YgAt-c" target="_blank">Ver Trailer</a>
+              </button>
+              <br>
+              <p class="puntaje">Puntación: 6.73/10</p>
+            </div>
+          </div>
+      </div>
+      <div class="tarjetaContenedor">
+          <div class="tarjeta">
+            <div class="adelante ghost">
+            </div>
+            <div class="atras">
+              <p class="pelitxt">En esta película de animación japonesa, un agente cibernético debe detener a un pirata informático experto en introducirse en los sistemas de programación de híbridos mitad humanos, mitad robots, antes de que pueda lograr sus perversos objetivos.</p>
+              <br>
+              <button class="botonCard">
+                  <a href="https://www.youtube.com/watch?v=0H-8OI4ZJRk" target="_blank">Ver Trailer</a>
+              </button>
+              <br>
+              <p class="puntaje">Puntación: 11/10</p>
+            </div>
+          </div>
+      </div>
+      <div class="tarjetaContenedor">
+          <div class="tarjeta">
+            <div class="adelante evangelion">
+            </div>
+            <div class="atras">
+              <p class="pelitxt">Cuando unos angeles violentos descienden a la Tierra para destruir a la humanidad, Shinji, un joven de 14 años, se une a un pequeño escuadrón de pilotos bajo el mando de su padre, utilizando máquinas gigantes que parecen tener sus propias mentes.</p>
+              <br>
+              <button class="botonCard">
+                  <a href="https://www.youtube.com/watch?v=13nSISwxrY4" target="_blank">Ver Trailer</a>
+              </button>
+              <br>
+              <p class="puntaje">Puntación: 9.99/10</p>
+            </div>
+          </div>
+      </div>
     </section>
     <footer class="pie"> <!-- pie de pagina -->
         <hr>

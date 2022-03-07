@@ -1,0 +1,240 @@
+@import "contacto";
+@import "catalogo";
+@import "variables";
+
+.encabezado { 
+    grid-area: encabezado;
+    }
+.menu1 {
+    grid-area: menu1;
+    }   
+.pie { 
+    grid-area: pie;
+    } 
+.seccionSecundaria {
+    grid-area: seccionSecundaria;
+    }  
+.home {
+    grid-area: home;
+    }   
+.parrafo {
+    grid-area: parrafo;
+    }  
+#reco_titulo {
+    grid-area: reco_titulo;
+    }
+   
+    /* ESTILOS MOBILE */ 
+    
+@media screen and (min-width: 320px) {
+    .main {
+        font-size: 14px;
+    }
+    .main {
+        display: grid; 
+        grid-auto-columns: 1fr; 
+        grid-template-columns:  1fr; 
+        grid-template-rows: 0.2fr 0.01fr 0.2fr 0.1fr 0.1fr 1fr 0.10fr; 
+        gap: 0px 0px; 
+        grid-template-areas: 
+          "encabezado"
+          "menu1"
+          "parrafo"
+          "reco_titulo"
+          "home"
+          "home"
+          "seccionSecundaria"
+          "pie"; 
+    }
+    .home,
+    .home1, 
+    .home2 { 
+        font-size: 8px;
+    }
+    .menu1 { font-size: 1em;}
+    .main_texto { 
+        overflow: auto;
+    }
+    .pie { 
+        font-size: 8px;
+    }
+}
+    
+@media screen and (min-width: 1200px) {
+    .main {
+        display: grid; 
+        grid-auto-columns: 1fr; 
+        grid-template-columns: 1fr 1fr 1fr 1fr; 
+        grid-template-rows: 0.5fr 0.09fr 0.9fr 0.1fr 1fr 1fr 0.10fr; 
+        gap: 0px 0px; 
+        grid-template-areas: 
+          "encabezado encabezado encabezado encabezado"
+          "menu1 menu1 menu1 menu1"
+          "parrafo parrafo parrafo parrafo"
+          "reco_titulo reco_titulo reco_titulo reco_titulo"
+          "home home home seccionSecundaria"
+          "home home home seccionSecundaria"
+          "pie pie pie pie"; 
+    }
+    .home2 { 
+        font-size: 20px;
+    }
+    .pie { 
+        font-size: 1.25em;
+    }
+}
+
+
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body { 
+    font: $fuente;
+    @include lineas;
+    width: 90%;
+    margin:auto;
+    ul { 
+        list-style: none;
+        a {
+            color: black;
+            text-decoration: none;}}
+}
+
+.main, body {
+    .encabezado { /* logo del encabezado */ 
+        width: 100%;
+        height: 12.5em;
+        margin-bottom: 0%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        @include cabeza;
+        .logoTitulo {
+            font-size: 5rem;
+            font-weight: bolder;
+            text-shadow: 5px 5px 5px grey;
+        }
+        .logoSubtitulo { 
+            font-size: 2rem;
+            font-weight: bold;
+            text-shadow: 5px 5px 5px grey;
+            font-style: italic;
+        }
+    } 
+    .menu1 {  /* menu de navegacion */
+        @include fondo-color; 
+        position: sticky;
+        top: 0px;
+        display:flex;
+        justify-content: space-between;
+        flex-direction: row;
+        background-color: #f7f4f2;
+        margin: 0px 0px; 
+        width: 100%;
+        height: 1.875em;
+        border: outset black 1px;
+        #menu_icono {
+            max-width: fit-content;
+            max-height: fit-content;
+            padding: 2px 2px;}
+        #menu_nombre { 
+            display: flex;
+            align-items: center;
+            font-size: 1.13em;} 
+        .menu_pestanas {
+            padding-left: 3px;
+            padding-right: 3px;
+            .pestana{
+                display: inline-block;
+                font-size: 1.25em;
+                padding: 0px 3px 3px 3px}}
+        ul li a{
+            &:hover {border-bottom: 2px solid black;}}
+    }
+    .pie { /* pie de pagina */ 
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        width: auto;
+        height: 6.25em;
+        margin: 0.625em 0px;
+        margin-top: 5em;
+        padding: 0.625em;
+        border: solid black 2px;
+        @include fondo-color;
+        #miNombre { 
+        padding-right: 20em;}
+    }
+    .parrafo p { /* parrafo principal */ 
+        @include fondo-color;
+        margin: 3.125rem  3.125rem; 
+        padding: 1.25rem 1.25rem;
+        font-size: 1.6em;
+        border: solid 1px black !important;
+    #reco_titulo { 
+        border: solid black 1px; 
+        text-align: center;
+        }     
+    }
+    #reco_titulo { /* titulo de la recomendacion semanal */
+        border: solid black 1px; 
+        text-align: center;
+        @include fondo-color;
+    }
+    .home{ /* imagen de la peli y parrafo */ 
+        display: flex;
+        @include fondo-color;
+        .home1 { 
+            height: 38.75rem;
+            border: solid black 1px;
+            #recomendacion { 
+                width: 25rem;
+                height: 37.5rem;
+                border:solid; 
+                margin: 0.625rem 0.625rem;
+                background-image: url(../images/father.jpg);
+                background-size: contain;}
+            }
+        .home2 {
+            height: 38.75rem;
+            border: solid black 1px;
+            padding: 1.25rem 1.25rem;
+            overflow: auto;
+            #puntaje{
+                vertical-align: bottom;
+                font-weight: bold;
+
+            }
+        }
+    }
+    .seccionSecundaria { /* secciones */
+        @include fondo-color;
+        display: flex;
+        flex-direction: column;
+        height: 38.75rem;
+        border: solid black 1px;
+        .seccionSecundaria_secciones {
+            margin-top: 6.25rem;
+            font-size: 1.25em;
+            #seccionNombre{ 
+                text-align: center;
+            }
+            .seccion {
+                border: solid 1px;
+                background-color: rgba(128, 128, 128, 0.123);
+                padding: 0.725em 0.725em;
+                margin: 0.625em 0.625em;
+                &:hover {
+                    background-color: #f7f4f2;}
+                &:active { 
+                    background-color: #f7f4f2;
+                    box-shadow: 0 3px #666;
+                    transform: translateY(4px);}
+            }    
+        }
+
+    }
+}
