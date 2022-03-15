@@ -27,11 +27,11 @@
                 <img src="https://img.icons8.com/external-outline-juicy-fish/60/000000/external-film-film-making-outline-outline-juicy-fish-15.png" id="menu_icono"/> <!-- icono del nav-->
                 <h4 id="menu_nombre"></h4> 
                 <ul class="menu_pestanas">
-                    <li class="pestana"><a href="index.html">|Inicio|</a></li>
-                    <li class="pestana"><a href="pages/peliculas.html">|Películas|</a></li>
-                    <li class="pestana"><a href="pages/series.html">|Series|</a></li>
-                    <li class="pestana"><a href="pages/animaciones.html">|Animaciones|</a></li>
-                    <li class="pestana"><a href="pages/contacto.html">|Contacto|</a></li>
+                    <li class="pestana"><a class="menuNombre" href="index.html">Inicio</a></li>
+                    <li class="pestana"><a class="menuNombre" href="pages/peliculas.html">Películas</a></li>
+                    <li class="pestana"><a class="menuNombre" href="pages/series.html">Series</a></li>
+                    <li class="pestana"><a class="menuNombre" href="pages/animaciones.html">Animaciones</a></li>
+                    <li class="pestana"><a class="menuNombre" href="pages/contacto.html">Contacto</a></li>
                 </ul>
         </nav>
         <div class="parrafo"> <!-- parrafo descriptivo del Index, ocupa la 3 fila del grid-->
@@ -40,7 +40,9 @@
         <h2 id="reco_titulo">Recomendación de la semana </h2><!-- se agrego por fuera del <home> es una fila independiente del Grid (la 4) se espera poder implementarla dentro del <home> -->
         <article class="home"> <!-- secciones principales (recomendacion de la semana, tabla de criticas y atajo de secciones)-->
             <div class="home1"> <!-- recomendacion de la semana-->
-            <div id="recomendacion"></div>
+                <div >
+                    <img src="images/father.jpg" id="recomendacion" alt="" >
+                </div>
             </div>
             <div class="home2">
                 <p class="main_texto">
@@ -61,11 +63,13 @@
         <aside class="seccionSecundaria"> <!-- . En la proxima version se espera eliminar la tabla y el atajo de secciones, no son necesarios y rompen con la estetica-->
             <ul class="seccionSecundaria_secciones">
                 <h3 id="seccionNombre">Secciones</h3>
+                <h4 id="seccionSub">Entra para ver nuestro catalogo de obras</h4>
                 <li class="seccion"><a href="pages/peliculas.html">Películas</a></li>
                 <li class="seccion"><a href="pages/series.html">Series</a></li>
                 <li class="seccion"><a href="pages/animaciones.html">Animaciones</a></li>
             </ul>
             <br> <br>
+            <img src="images/gifcine.gif" class="seccionGif">
         </aside>
         <footer class="pie"> <!--pie de pagina-->
             <h2 id="miNombre">© Bruno Niello 2022</h2>

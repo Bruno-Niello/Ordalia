@@ -23,14 +23,13 @@
 #reco_titulo {
     grid-area: reco_titulo;
     }
-   
+
     /* ESTILOS MOBILE */ 
     
-@media screen and (min-width: 320px) {
+@media screen and (max-width: 799px) {
+
     .main {
         font-size: 14px;
-    }
-    .main {
         display: grid; 
         grid-auto-columns: 1fr; 
         grid-template-columns:  1fr; 
@@ -45,18 +44,29 @@
           "home"
           "seccionSecundaria"
           "pie"; 
-    }
-    .home,
-    .home1, 
-    .home2 { 
-        font-size: 8px;
-    }
-    .menu1 { font-size: 1em;}
-    .main_texto { 
-        overflow: auto;
-    }
-    .pie { 
-        font-size: 8px;
+        .parrafo{ 
+            .parrafo_principal{font-size: 1em;}}
+        .home{
+            .home1{
+                width: 300px;
+                #recomendacion{
+                    max-width: 300px;
+                    width: 100%;
+
+            }}
+            .home2 { 
+                font-size: 1em;
+        }}
+        .menu1 { font-size: 1em;}
+        .main_texto { 
+            overflow: auto;}
+        .pie { 
+            font-size: 8px;
+            .redes{
+                .icon{
+                    width: 22px;
+                    height: 22px;}}
+        }
     }
 }
     
@@ -75,12 +85,16 @@
           "home home home seccionSecundaria"
           "home home home seccionSecundaria"
           "pie pie pie pie"; 
-    }
-    .home2 { 
-        font-size: 20px;
-    }
-    .pie { 
-        font-size: 1.25em;
+        .home{
+          .home2 { 
+        font-size: 20px;}}
+        .pie { 
+            font-size: 1.25em;
+            .redes{
+                .icon{
+                width: 44px;
+                height: 44px;}}
+        }
     }
 }
 
@@ -133,25 +147,39 @@ body {
         background-color: #f7f4f2;
         margin: 0px 0px; 
         width: 100%;
-        height: 1.875em;
+        height: 3em;
         border: outset black 1px;
         #menu_icono {
             max-width: fit-content;
             max-height: fit-content;
             padding: 2px 2px;}
         #menu_nombre { 
-            display: flex;
-            align-items: center;
+            
             font-size: 1.13em;} 
         .menu_pestanas {
             padding-left: 3px;
             padding-right: 3px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             .pestana{
                 display: inline-block;
-                font-size: 1.25em;
-                padding: 0px 3px 3px 3px}}
-        ul li a{
-            &:hover {border-bottom: 2px solid black;}}
+                font-size: 1.5em;
+                padding: 0px 7px 3px 7px;
+                &:hover {
+                    border: 2px solid black;
+                    font-weight: bolder;
+                    background-color: rgba(117, 117, 117, 0.13);
+                    @include cabeza;
+                    width: 150%;
+                    height: 150%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;}   
+                .menuNombre{
+                    font-weight: bold;
+                   
+            }}}
     }
     .pie { /* pie de pagina */ 
         display: flex;
@@ -195,7 +223,6 @@ body {
                 height: 37.5rem;
                 border:solid; 
                 margin: 0.625rem 0.625rem;
-                background-image: url(../images/father.jpg);
                 background-size: contain;}
             }
         .home2 {
@@ -214,21 +241,37 @@ body {
         @include fondo-color;
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
         height: 38.75rem;
         border: solid black 1px;
+        .seccionGif{
+            width: 250px;
+            height: 250px;
+            margin: 10px 5px 50px 5px;
+            border: 2px solid black;
+        }
         .seccionSecundaria_secciones {
             margin-top: 6.25rem;
             font-size: 1.25em;
-            #seccionNombre{ 
+            #seccionNombre { 
+                font-size: 1.5em;
                 text-align: center;
-            }
+                font-weight: bold;}
+            #seccionSub {
+                font-style: italic;
+                font-size: 0.75em}
             .seccion {
                 border: solid 1px;
                 background-color: rgba(128, 128, 128, 0.123);
                 padding: 0.725em 0.725em;
                 margin: 0.625em 0.625em;
+                font-weight: bold;
+                text-align: center;
                 &:hover {
-                    background-color: #f7f4f2;}
+                    @include cabeza;
+                    font-weight: bolder;
+                    height: 25%;}
                 &:active { 
                     background-color: #f7f4f2;
                     box-shadow: 0 3px #666;

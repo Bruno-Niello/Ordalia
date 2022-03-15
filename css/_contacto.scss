@@ -41,7 +41,9 @@
                 background-color: whitesmoke;
                 text-align: center;}
             .aviso_name { 
-                font-size: 0.88em;}
+                font-size: 0.88em;
+                font-weight: bolder;
+                text-align: center;}
             #aviso { 
                 margin: 0.3125em;}
             .botonformu { 
@@ -52,8 +54,8 @@
                 margin: 5px;
                 padding: 5px;
                 &:hover{
-                    background-color: rgba(122, 122, 122, 0.527);
-                    border-bottom: 2px solid black;}
+                    @include cabeza;
+                    border: 2px solid black;}
                 &:active { 
                     background-color: grey;}
                 &--enviar{
@@ -70,7 +72,7 @@
             border-radius: 3.125em;
             @include fondo-color;
             &:hover{
-                background-color: rgba(122, 122, 122, 0.527);
+                @include cabeza;
                 border-bottom: 2px solid black;}
             &:active { 
                 background-color: grey;
